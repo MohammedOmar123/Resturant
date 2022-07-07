@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Pacifico&display=swap");
+@import "font-awesome-sprockets";
+@import "font-awesome";
+:root {
+    --background-color: #ffffff;
+    --font-color: rgb(0, 0, 0);
+    --button-color: #fc6a43;
+    --buttonfont-color: #fff;
+    --navbuttonfocus-color: #263238;
+    --navbutton-color: #fff;
+    --navbuttonfont-color: rgb(0, 0, 0);
+    --search-color: #f0e5e2;
+    --searchfont-color: #000000;
+    --search-color-input: rgb(238, 223, 223);
+}
+
+.dark {
+    --background-color: #0c1015;
+    --font-color: rgb(255, 255, 255);
+    --button-color: #ffffff;
+    --buttonfont-color: rgb(0, 0, 0);
+    --navbuttonfocus-color: #263238;
+    --navbutton-color: #141921;
+    --navbuttonfont-color: rgb(255, 255, 255);
+    --search-color: #141921;
+    --searchfont-color: #757575;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: visible;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+.header {
+    overflow: hidden;
+    padding: 10px 5px;
+    padding-top: 10px;
+}
+
+.header a {
+    float: left;
+    color: var(--font-color);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+body .back-bot {
+    align-items: center;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.color-fff {
+    color: var(--buttonfont-color);
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+.header-right {
+    float: right;
+}
+
+.top-Categories {
+    padding-top: 10px;
+    margin: auto;
+    padding-left: 30px;
+    font-size: 18px;
+    color: var(--font-color);
+}
+
+#all {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catrCont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    overflow: auto;
+    overflow-y: scroll;
+    padding-bottom: 400px;
+    padding-top: 100px;
+}
+
+.catrCont::-webkit-scrollbar {
+    display: none;
+}
+
+.catrCont div {
+    width: 97%;
+    height: 130px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.catrContant {
+    display: flex;
+    border-radius: 10px;
+    width: 300px;
+    background-color: var(--navbutton-color);
+    justify-content: space-around;
+    box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-div .img {
+    width: 130%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.text-Div {
+    padding-left: 50px;
+    color: var(--font-color);
+}
+
+.nameProduct {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100px;
+}
+
+.but-div {
+    margin-top: 60px;
+    align-items: center;
+    position: relative;
+}
+
+.fa-trash-can {
+    background-color: none;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.catrContant button {
+    background-color: #ffffff00;
+    border: none;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: var(--font-color);
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50px;
+}
+
+#all .removeButt {
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+#total {
+    color: var(--font-color);
+}
+
+.btn-del-all:hover,
+.btn-del-all:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn-del-all-5:hover {
+    transform: translateY(-1px);
+}
+
+.btn-del-all-5:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.btn-del-all {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: var(--button-color);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: var(--background-color);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 200px;
+}
+
+.but-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-btun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .header a.logo {
+        font-size: 45px;
+    }
+    .color-fff {
+        font-size: 25px;
+    }
+    .catrCont div {
+        width: 80%;
+        height: 130px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .catrContant {
+        display: flex;
+        border-radius: 10px;
+        width: 300px;
+        background-color: var(--navbutton-color);
+        justify-content: space-around;
+        box-shadow: 5px 7px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    .img-div .img {
+        width: 70%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .text-Div {
+        /* order: 2; */
+        padding-left: 5px;
+        color: var(--font-color);
+    }
+    .nameProduct {
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+    }
+    .but-div {
+        margin-top: 60px;
+        align-items: center;
+        /* order: 3; */
+        position: relative;
+    }
+    .fa-trash-can {
+        background-color: none;
+        margin-top: 80px;
+        margin-left: 130px;
+    }
+    .catrCont {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100px;
+        overflow: auto;
+        overflow-y: scroll;
+        padding-bottom: 450px;
+        padding-top: 100px;
+    }
+    .top-Categories {
+        padding-top: 10px;
+        margin: auto;
+        padding-left: 290px;
+        font-size: 18px;
+        color: var(--font-color);
+    }
+    div #total {
+        padding-left: 200px;
+    }
+}
