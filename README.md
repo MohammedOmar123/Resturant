@@ -18,12 +18,6 @@
 
 - Food delivery website that provides its customers with good hearty food, drinks, and dessert, user-friendly app allows users to order food quickly and easily at their own convenience, where the user can add them favoriate food to cart and do the payment method easily.
 
-## The wireframes
-
-![image1](./Images/1.jpg)
-![image2](./Images/2.jpg)
-![image3](./Images/3.jpg)
-![image4](./Images/4.jpg)
 
 ## User Journey
 
